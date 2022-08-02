@@ -1,0 +1,7 @@
+                               Obel:
+                        By Thomas de Bock. 
+         Obel can currently only be used to (SQL) inject parameters contained in the site url")
+                        tags:")
+                        --help
+                        -u (url)")
+                        -p (parametername)")
