@@ -1,0 +1,8 @@
+#MySQL
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use
+#MariaDB
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use
+#Oracle
+quoted string not properly terminated
+#SQL Server
+unclosed quotation mark after the character string

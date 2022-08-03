@@ -14,5 +14,5 @@
                    `-...-`
                        --------------------------------------
 
-             ***please do not use this tool without target permisson***
+                ***do not use this tool without target permission***
              

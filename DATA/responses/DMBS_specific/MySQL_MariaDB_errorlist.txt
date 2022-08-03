@@ -1,0 +1,880 @@
+Can't create file '%s' (errno: %d)
+Can't create table '%s' (errno: %d)
+Can't create database '%s' (errno: %d
+Can't create database '%s'; database exists
+Can't drop database '%s'; database doesn't exist
+Error dropping database (can't delete '%s', errno: %d)
+Error dropping database (can't rmdir '%s', errno: %d)
+Error on delete of '%s' (errno: %d)
+Can't read record in system table
+Can't get status of '%s' (errno: %d)
+Can't get working directory (errno: %d)
+Can't lock file (errno: %d)
+Can't open file: '%s' (errno: %d)
+Can't find file: '%s' (errno: %d)
+Can't read dir of '%s' (errno: %d)
+Can't change dir to '%s' (errno: %d)
+Record has changed since last read in table '%s'
+Disk full (%s); waiting for someone to free some space...
+Can't write; duplicate key in table '%s'
+Error on close of '%s' (errno: %d)
+Error reading file '%s' (errno: %d)
+Error on rename of '%s' to '%s' (errno: %d)
+Error writing file '%s' (errno: %d)
+%s' is locked against change
+Sort aborted
+View '%s' doesn't exist for '%s'
+Got error %d from storage engine
+Table storage engine for '%s' doesn't have this option
+Can't find record in '%s'
+Incorrect information in file: '%s'
+Incorrect key file for table '%s'; try to repair it
+Old key file for table '%s'; repair it!
+Table '%s' is read only
+Out of memory; restart server and try again (needed %d bytes)
+Out of sort memory, consider increasing server sort buffer size
+Unexpected EOF found when reading file '%s' (Errno: %d)
+Too many connections
+Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space
+Can't get hostname for your address
+Bad handshake
+Access denied for user '%s'@'%s' to database '%s'
+Access denied for user '%s'@'%s' (using password: %s)
+No database selected
+Unknown command
+Column '%s' cannot be null
+Unknown database '%s'
+Table '%s' already exists
+Unknown table '%s'
+Column '%s' in %s is ambiguous
+Server shutdown in progress
+Unknown column '%s' in '%s'
+%s' isn't in GROUP BY
+Can't group on '%s'
+Statement has sum functions and columns in same statement
+Column count doesn't match value count
+Identifier name '%s' is too long
+Duplicate column name '%s'
+Duplicate key name '%s'
+Duplicate entry '%s' for key %d
+Incorrect column specifier for column '%s'
+%s near '%s' at line %d
+Query was empty
+Not unique table/alias: '%s'
+Invalid default value for '%s'
+Multiple primary key defined
+Too many keys specified; max %d keys allowed
+Too many key parts specified; max %d parts allowed
+Specified key was too long; max key length is %d bytes
+Key column '%s' doesn't exist in table
+BLOB column '%s' can't be used in key specification with the used table type
+Column length too big for column '%s' (max = %lu); use BLOB or TEXT instead
+Incorrect table definition; there can be only one auto column and it must be defined as a key
+%s: ready for connections. Version: '%s' socket: '%s' port: %d
+%s: Normal shutdown
+%s: Got signal %d. Aborting!
+%s: Shutdown complete
+%s: Forcing close of thread %ld user: '%s'
+Can't create IP socket
+Table '%s' has no index like the one used in CREATE INDEX; recreate the table
+Field separator argument is not what is expected; check the manual
+You can't use fixed rowlength with BLOBs; please use 'fields terminated by'
+The file '%s' must be in the database directory or be readable by all
+File '%s' already exists
+Records: %ld Deleted: %ld Skipped: %ld Warnings: %ld
+Records: %ld Duplicates: %ld
+Incorrect prefix key; the used key part isn't a string, the used length is longer than the key part, or the storage engine doesn't support unique prefix keys
+You can't delete all columns with ALTER TABLE; use DROP TABLE instead
+Can't DROP '%s'; check that column/key exists
+Records: %ld Duplicates: %ld Warnings: %ld
+You can't specify target table '%s' for update in FROM clause
+Unknown thread id: %lu
+You are not owner of thread %lu
+No tables used
+Too many strings for column %s and SET
+Can't generate a unique log-filename %s.(1-999)
+Table '%s' was locked with a READ lock and can't be updated
+Description
+Table '%s' was not locked with LOCK TABLES
+You should never see it
+Incorrect database name '%s'
+Incorrect table name '%s'
+The SELECT would examine more than MAX_JOIN_SIZE rows; check your WHERE and use SET SQL_BIG_SELECTS=1 or SET MAX_JOIN_SIZE=# if the SELECT is okay
+Unknown error
+Unknown procedure '%s'
+Incorrect parameter count to procedure '%s'
+Incorrect parameters to procedure '%s'
+Unknown table '%s' in %s
+Column '%s' specified twice
+Invalid use of group function
+Table '%s' uses an extension that doesn't exist in
+A table must have at least 1 column
+The table '%s' is full
+Unknown character set: '%s'
+Too many tables;
+Too many columns
+Row size too large. The maximum row size for the used table type, not counting BLOBs, is %ld. You have to change some columns to TEXT or BLOBs
+Thread stack overrun: Used: %ld of a %ld stack. Use 'mysqld --thread_stack=#' to specify a bigger stack if needed
+Cross dependency found in OUTER JOIN; examine your ON conditions
+Table handler doesn't support NULL in given index. Please change column '%s' to be NOT NULL or use another handler
+Can't load function '%s'
+Can't initialize function '%s'; %s
+No paths allowed for shared library
+Function '%s' already exists
+Can't open shared library '%s' (Errno: %d %s)
+Can't find symbol '%s' in library
+Function '%s' is not defined
+Host '%s' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'
+Host '%s' is not allowed to connect to this
+as an anonymous user and anonymous users are not allowed to change passwords
+You must have privileges to update tables in the mysql database to be able to change passwords for others
+Can't find any matching row in the user table
+Rows matched: %ld Changed: %ld Warnings: %ld
+Can't create a new thread (Errno %d); if you are not out of available memory, you can consult the manual for a possible OS-dependent bug
+Column count doesn't match value count at row %ld
+Can't reopen table: '%s'
+Invalid use of NULL value
+Got error '%s' from regexp
+Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+There is no such grant defined for user '%s' on host '%s'
+%s command denied to user '%s'@'%s' for table '%s'
+%s command denied to user '%s'@'%s' for column '%s' in table '%s'
+Illegal GRANT/REVOKE command; please consult the manual to see which privileges can be used
+The host or user argument to GRANT is too long
+Table '%s.%s' doesn't exist
+There is no such grant defined for user '%s' on host '%s' on table '%s'
+The used command is not allowed with this
+You have an error in your SQL syntax; check the manual that corresponds to your
+Delayed insert thread couldn't get requested lock for table %s
+Too many delayed threads in use
+Aborted connection %ld to db: '%s' user: '%s' (%s)
+Got a packet bigger than 'max_allowed_packet' bytes
+Got a read error from the connection pipe
+Got an error from fcntl()
+Got packets out of order
+Couldn't uncompress communication packet
+Got an error reading communication packets
+Got timeout reading communication packets
+Got an error writing communication packets
+Got timeout writing communication packets
+Result string is longer than 'max_allowed_packet' bytes
+The used table type doesn't support BLOB/TEXT columns
+The used table type doesn't support AUTO_INCREMENT columns
+INSERT DELAYED can't be used with table '%s' because it is locked with LOCK TABLES
+Incorrect column name '%s'
+The used storage engine can't index column '%s'
+Unable to open underlying table which is differently defined or of non-MyISAM type or doesn't exist
+Can't write, because of unique constraint, to table '%s'
+BLOB/TEXT column '%s' used in key specification without a key length
+All parts of a PRIMARY KEY must be NOT NULL; if you need NULL in a key, use UNIQUE instead
+Result consisted of more than one row
+This table type requires a primary key
+ is not compiled with RAID support
+You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+Key '%s' doesn't exist in table '%s'
+Can't open table
+The storage engine for the table doesn't support %s
+You are not allowed to execute this command in a transaction
+Got error %d during COMMIT
+Got error %d during ROLLBACK
+Got error %d during FLUSH_LOGS
+Got error %d during CHECKPOINT
+Aborted connection %ld to db: '%s' user: '%s' host: '%s' (%s)
+You should never see it
+Binlog closed, cannot RESET MASTER
+Failed rebuilding the index of dumped table '%s'
+Error from master: '%s'
+Net error reading from master
+Net error writing to master
+Can't find FULLTEXT index matching the column list
+Can't execute the given command because you have active locked tables or an active transaction
+Unknown system variable '%s'
+Table '%s' is marked as crashed and should be repaired
+Table '%s' is marked as crashed and last (automatic?) repair failed
+Some non-transactional changed tables couldn't be rolled back
+Multi-statement transaction required more than 'max_binlog_cache_size' bytes of storage; increase this mysqld variable and try again
+This operation cannot be performed with a running slave; run STOP SLAVE first
+This operation requires a running slave; configure slave and do START SLAVE
+Description
+The server is not configured as slave; fix in config file or with CHANGE MASTER TO
+Could not initialize master info structure; more error messages can be found in the
+Could not create slave thread; check system resources
+User %s already has more than 'max_user_connections' active connections
+You may only use constant expressions with SET
+Lock wait timeout exceeded; try restarting transaction
+The total number of locks exceeds the lock table size
+Update locks cannot be acquired during a READ UNCOMMITTED transaction
+DROP DATABASE not allowed while thread is holding global read lock
+CREATE DATABASE not allowed while thread is holding global read lock
+Incorrect arguments to %s
+%s'@'%s' is not allowed to create new users
+Incorrect table definition; all MERGE tables must be in the same database
+Deadlock found when trying to get lock; try restarting transaction
+The used table type doesn't support FULLTEXT indexes
+Cannot add foreign key constraint
+Cannot add or update a child row: a foreign key constraint fails
+Cannot delete or update a parent row: a foreign key constraint fails
+Error connecting to master: %s
+Error running query on master: %s
+Error when executing command %s: %s
+Incorrect usage of %s and %s
+The used SELECT statements have a different number of columns
+Can't execute the query because you have a conflicting read lock
+Mixing of transactional and non-transactional tables is disabled
+Option '%s' used twice in statement
+User '%s' has exceeded the '%s' resource (current value: %ld)
+Access denied; you need (at least one of) the %s privilege(s) for this operation
+Variable '%s' is a SESSION variable and can't be used with SET GLOBAL
+Variable '%s' is a GLOBAL variable and should be set with SET GLOBAL
+Variable '%s' doesn't have a default value
+Variable '%s' can't be set to the value of '%s'
+Incorrect argument type to variable '%s'
+Variable '%s' can only be set, not read
+Incorrect usage/placement of '%s'
+ doesn't yet support '%s'
+Got fatal error %d from master when reading data from binary log: '%s'
+Slave SQL thread ignored the query because of replicate-*-table rules
+Variable '%s' is a %s variable
+Incorrect foreign key definition for '%s': %s
+Key reference and table reference don't match
+Operand should contain %d column(s)
+Subquery returns more than 1 row
+Unknown prepared statement handler (%.*s) given to %s
+Help database is corrupt or does not exist
+Cyclic reference on subqueries
+Converting column '%s' from %s to %s
+Reference '%s' not supported (%s)
+Every derived table must have its own alias
+Select %u was reduced during optimization
+Table '%s' from one of the SELECTs cannot be used in %s
+Client does not support authentication protocol requested by server; consider upgrading
+All parts of a SPATIAL index must be NOT NULL
+COLLATION '%s' is not valid for CHARACTER SET '%s'
+Slave is already running
+Slave already has been stopped
+Uncompressed data size too large; the maximum size is %d (probably, length of uncompressed data was corrupted)
+ZLIB: Not enough memory
+ZLIB: Not enough room in the output buffer (probably, length of uncompressed data was corrupted)
+ZLIB: Input data corrupted
+Row %u was cut by GROUP_CONCAT()
+Row %ld doesn't contain data for all columns
+Row %ld was truncated; it contained more data than there were input columns
+Column set to default value; NULL supplied to NOT NULL column '%s' at row %ld
+Out of range value for column '%s' at row %ld
+Data truncated for column '%s' at row %ld
+Using storage engine %s for table '%s'
+Illegal mix of collations (%s,%s) and (%s,%s) for operation '%s'
+Cannot drop one or more of the requested users
+Can't revoke all privileges for one or more of the requested users
+Illegal mix of collations (%s,%s), (%s,%s), (%s,%s) for operation '%s'
+Illegal mix of collations for operation '%s'
+Variable '%s' is not a variable component (can't be used as XXXX.variable_name)
+Unknown collation: '%s'
+SSL parameters in CHANGE MASTER are ignored because this
+Server is running in --secure-auth mode, but '%s'@'%s' has a password in the old format; please change the password to the new format
+Field or reference '%s%s%s%s%s' of SELECT #%d was resolved in SELECT #%d
+Incorrect parameter or combination of parameters for START SLAVE UNTIL
+It is recommended to use --skip-slave-start when doing step-by-step replication with START SLAVE UNTIL; otherwise, you will get problems if you get an unexpected slave's mysqld restart
+SQL thread is not to be started so UNTIL options are ignored
+Incorrect index name '%s'
+Incorrect catalog name '%s'
+Query cache failed to set size %lu; new query cache size is %lu
+Column '%s' cannot be part of FULLTEXT index
+Unknown key cache '%s'
+ started in --skip-name-resolve mode; you must restart it without this switch for this grant to work
+Unknown storage engine '%s'
+%s' is deprecated and will be removed in a future release. Please use %s instead
+The target table %s of the %s is not updatable
+The '%s' feature is disabled; you need 
+ is running with the %s option so it cannot execute this statement
+Column '%s' has duplicated value '%s' in %s
+Truncated incorrect %s value: '%s'
+Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+Invalid ON UPDATE clause for '%s' column
+This command is not supported in the prepared statement protocol yet
+Got error %d '%s' from %s
+Got temporary error %d '%s' from %s
+Unknown or incorrect time zone: '%s'
+Invalid TIMESTAMP value in column '%s' at row %ld
+Invalid %s character string: '%s'
+Result of %s() was larger than max_allowed_packet (%ld) - truncated
+Conflicting declarations: '%s%s' and '%s%s'
+Can't create a %s from within another stored routine
+%s %s already exists
+%s %s does not exist
+Failed to DROP %s %s
+Failed to CREATE %s %s
+%s with no matching label: %s
+Redefining label %s
+End-label %s without match
+Referring to uninitialized variable %s
+PROCEDURE %s can't return a result set in the given context
+RETURN is only allowed in a FUNCTION
+%s is not allowed in stored procedures
+The update log is deprecated and replaced by the binary log; SET SQL_LOG_UPDATE has been ignored. This option will be removed in
+The update log is deprecated and replaced by the binary log; SET SQL_LOG_UPDATE has been translated to SET SQL_LOG_BIN. This option will be removed in
+Query execution was interrupted
+Incorrect number of arguments for %s %s; expected %u, got %u
+Undefined CONDITION: %s
+No RETURN found in FUNCTION %s
+FUNCTION %s ended without RETURN
+Cursor statement must be a SELECT
+Cursor SELECT must not have INTO
+Undefined CURSOR: %s
+Cursor is already open
+Cursor is not open
+Undeclared variable: %s
+Incorrect number of FETCH variables
+No data - zero rows fetched, selected, or processed
+Duplicate parameter: %s
+Duplicate variable: %s
+Duplicate condition: %s
+Duplicate cursor: %s
+Failed to ALTER %s %s
+Subquery value not supported
+%s is not allowed in stored function or trigger
+Variable or condition declaration after cursor or handler declaration
+Cursor declaration after handler declaration
+Case not found for CASE statement
+Configuration file '%s' is too big
+Malformed file type header in file '%s'
+Unexpected end of file while parsing comment '%s'
+Error while parsing parameter '%s' (line: '%s')
+Unexpected end of file while skipping unknown parameter '%s'
+EXPLAIN/SHOW can not be issued; lacking privileges for underlying table
+File '%s' has unknown type '%s' in its header
+%s.%s' is not %s
+Column '%s' is not updatable
+View's SELECT contains a subquery in the FROM clause
+View's SELECT contains a '%s' clause
+View's SELECT contains a variable or parameter
+View's SELECT refers to a temporary table '%s'
+View's SELECT and view's field list have different column counts
+View merge algorithm can't be used here for now (assumed undefined algorithm)
+View being updated does not have complete key of underlying table in it
+View '%s.%s' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+Can't drop or alter a %s from within another stored routine
+GOTO is not allowed in a stored procedure handler
+Trigger already exists
+Trigger does not exist
+Trigger's '%s' is view or temporary table
+Updating of %s row is not allowed in %strigger
+There is no %s row in %s trigger
+Field '%s' doesn't have a default value
+Division by 0
+Incorrect %s value: '%s' for column '%s' at row %ld
+Illegal %s '%s' value found during parsing
+CHECK OPTION on non-updatable view '%s.%s'
+CHECK OPTION failed '%s.%s'
+%s command denied to user '%s'@'%s' for routine '%s'
+Failed purging old relay logs: %s
+Password hash should be a %d-digit hexadecimal number
+Target log not found in binlog index
+I/O error reading log index file
+Server configuration does not permit binlog purge
+Failed on fseek()
+Fatal error during log purge
+A purgeable log is in use, will not purge
+Unknown error during log purge
+Failed initializing relay log position: %s
+You are not using binary logging
+The '%s' syntax is reserved for purposes internal to the
+WSAStartup Failed
+Can't handle procedures with different groups yet
+Select must have a group with this procedure
+Can't use ORDER clause with this procedure
+Binary logging and replication forbid changing the global server %s
+Can't map file: %s, errno: %d
+Wrong magic in %s
+Prepared statement contains too many placeholders
+Key part '%s' length cannot be 0
+View text checksum failed
+Can not modify more than one base table through a join view '%s.%s'
+Can not insert into join view '%s.%s' without fields list
+Can not delete from join view '%s.%s'
+Operation %s failed for %s
+XAER_NOTA: Unknown XID
+XAER_INVAL: Invalid arguments (or unsupported command)
+XAER_RMFAIL: The command cannot be executed when global transaction is in the %s state
+XAER_OUTSIDE: Some work is done outside global transaction
+XAER_RMERR: Fatal error occurred in the transaction branch - check your data for consistency
+XA_RBROLLBACK: Transaction branch was rolled back
+There is no such grant defined for user '%s' on host '%s' on routine '%s'
+Failed to grant EXECUTE and ALTER ROUTINE privileges
+Failed to revoke all privileges to dropped routine
+Data too long for column '%s' at row %ld
+Bad SQLSTATE: '%s'
+%s: ready for connections. Version: '%s' socket: '%s' port: %d %s
+Can't load value from file with fixed size rows to variable
+You are not allowed to create a user with GRANT
+Incorrect %s value: '%s' for function %s
+Table definition has changed, please retry transaction
+Duplicate handler declared in the same block
+OUT or INOUT argument %d for routine %s is not a variable or NEW pseudo-variable in BEFORE trigger
+Not allowed to return a result set from a %s
+Cannot get geometry object from data you send to the GEOMETRY field
+A routine failed and has neither NO SQL nor READS SQL DATA in its declaration and binary logging is enabled; if non-transactional tables were updated, the binary log will miss their changes
+This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+You can't execute a prepared statement which has an open cursor associated with it. Reset the statement to re-execute it.
+The statement (%lu) has no open cursor.
+Explicit or implicit commit is not allowed in stored function or trigger.
+Field of view '%s.%s' underlying table doesn't have a default value
+Recursive stored functions and triggers are not allowed.
+Too big scale %d specified for column '%s'. Maximum is %lu.
+Too big precision %d specified for column '%s'. Maximum is %lu.
+For float(M,D, double(M,D or decimal(M,D, M must be >= D (column '%s').
+You can't combine write-locking of system tables with other tables or lock types
+Unable to connect to foreign data source: %s
+There was a problem processing the query on the foreign data source. Data source error: %s
+The foreign data source you are trying to reference does not exist. Data source error: %s
+Can't create federated table. The data source connection string '%s' is not in the correct format
+The data source connection string '%s' is not in the correct format
+Can't create federated table. Foreign data src error: %s
+Trigger in wrong schema
+Thread stack overrun: %ld bytes used of a %ld byte stack, and %ld bytes needed. Use 'mysqld --thread_stack=#' to specify a bigger stack.
+Routine body for '%s' is too long
+Cannot drop default keycache
+Display width out of range for column '%s' (max = %lu)
+XAER_DUPID: The XID already exists
+Datetime function: %s field overflow
+Can't update table '%s' in stored function/trigger because it is already used by statement which invoked this stored function/trigger.
+The definition of table '%s' prevents operation %s on table '%s'.
+The prepared statement contains a stored routine call that refers to that same statement. It's not allowed to execute a prepared statement in such a recursive manner
+Not allowed to set autocommit from a stored function or trigger
+Definer is not fully qualified
+View '%s'.'%s' has no definer information (old table format). Current user is used as definer. Please recreate the view!
+You need the SUPER privilege for creation view with '%s'@'%s' definer
+The user specified as a definer ('%s'@'%s') does not exist
+Changing schema from '%s' to '%s' is not allowed.
+Cannot delete or update a parent row: a foreign key constraint fails (%s)
+Cannot add or update a child row: a foreign key constraint fails (%s)
+Variable '%s' must be quoted with `...`, or renamed
+No definer attribute for trigger '%s'.'%s'. The trigger will be activated under the authorization of the invoker, which may have insufficient privileges. Please recreate the trigger.
+%s' has an old format, you should re-create the '%s' object(s)
+Recursive limit %d (as set by the max_sp_recursion_depth variable) was exceeded for routine %s
+Failed to load routine %s. The table mysql.proc is missing, corrupt, or contains bad data (internal code %d)
+Incorrect routine name '%s'
+Table upgrade required. Please do "REPAIR TABLE `%s`" or dump/reload to fix it!
+AGGREGATE is not supported for stored functions
+Can't create more than max_prepared_stmt_count statements (current value: %lu)
+`%s`.`%s` contains view recursion
+Non-grouping field '%s' is used in %s clause
+The used table type doesn't support SPATIAL indexes
+Triggers can not be created on system tables
+Leading spaces are removed from name '%s'
+Failed to read auto-increment value from storage engine
+user name
+host name
+String '%s' is too long for %s (should be no longer than %d)
+The target table %s of the %s is not insertable-into
+Table '%s' is differently defined or of non-MyISAM type or doesn't exist
+Too high level of nesting for select
+Name '%s' has become ''
+First character of the FIELDS TERMINATED string is ambiguous; please use non-optional and non-empty FIELDS ENCLOSED BY
+The foreign server, %s, you are trying to create already exists.
+The foreign server name you are trying to reference does not exist. Data source error: %s
+Table storage engine '%s' does not support the create option '%s'
+Syntax error: %s PARTITIONING requires definition of VALUES %s for each partition
+Only %s PARTITIONING can use VALUES %s in partition definition
+MAXVALUE can only be used in last partition definition
+Subpartitions can only be hash partitions and by key
+Must define subpartitions on all partitions if on one partition
+Wrong number of partitions defined, mismatch with previous setting
+Wrong number of subpartitions defined, mismatch with previous setting
+Constant/Random expression in (sub)partitioning function is not allowed
+Constant, random or timezone-dependent expressions in (sub)partitioning function are not allowed
+Expression in RANGE/LIST VALUES must be constant
+Field in list of fields for partition function not found in table
+List of fields is only allowed in KEY partitions
+The partition info in the frm file is not consistent with what can be written into the frm file
+The %s function returns the wrong type
+For %s partitions each partition must be defined
+VALUES LESS THAN value must be strictly increasing for each partition
+VALUES value must be of same type as partition function
+Multiple definition of same constant in list partitioning
+Partitioning can not be used stand-alone in query
+The mix of handlers in the partitions is not allowed in this version of
+For the partitioned engine it is necessary to define all %s
+Too many partitions (including subpartitions) were defined
+It is only possible to mix RANGE/LIST partitioning with HASH/KEY partitioning for subpartitioning
+Failed to create specific handler file
+A BLOB field is not allowed in partition function
+A %s must include all columns in the table's partitioning function
+Number of %s = 0 is not an allowed value
+Partition management on a not partitioned table is not possible
+Foreign key clause is not yet supported in conjunction with partitioning
+Error in list of partitions to %s
+Cannot remove all partitions, use DROP TABLE instead
+COALESCE PARTITION can only be used on HASH/KEY partitions
+REORGANIZE PARTITION can only be used to reorganize partitions not to change their numbers
+REORGANIZE PARTITION without parameters can only be used on auto-partitioned tables using HASH PARTITIONs
+%s PARTITION can only be used on RANGE/LIST partitions
+Trying to Add partition(s) with wrong number of subpartitions
+At least one partition must be added
+At least one partition must be coalesced
+More partitions to reorganize than there are partitions
+Duplicate partition name %s
+It is not allowed to shut off binlog on this command
+When reorganizing a set of partitions they must be in consecutive order
+Reorganize of range partitions cannot change total ranges except for last partition where it can extend the range
+Partition function not supported in this version for this handler
+Partition state cannot be defined from CREATE/ALTER TABLE
+The %s handler only supports 32 bit integers in VALUES
+Plugin '%s' is not loaded
+Incorrect %s value: '%s'
+Table has no partition for value %s
+It is not allowed to specify %s more than once
+Failed to create %s
+Failed to drop %s
+The handler doesn't support autoextend of tablespaces
+A size parameter was incorrectly specified, either number or on the form 10M
+The size number was correct but we don't allow the digit part to be more than 2 billion
+Failed to alter: %s
+Writing one row to the row-based binary log failed
+Table definition on master and slave does not match: %s
+Slave running with --log-slave-updates must use row-based binary logging to be able to replicate row-based binary log events
+Event '%s' already exists
+Failed to store event %s. Error code %d from storage engine.
+Unknown event '%s'
+Failed to alter event '%s'
+Failed to drop %s
+INTERVAL is either not positive or too big
+ENDS is either invalid or before STARTS
+Event execution time is in the past. Event has been disabled
+Failed to open mysql.event
+No datetime expression provided
+Column count of mysql.%s is wrong. Expected %d, found %d. The table is probably corrupted
+Cannot load from mysql.%s. The table is probably corrupted
+Failed to delete the event from mysql.event
+Error during compilation of event's body
+Same old and new event name
+Data for column '%s' too long
+Cannot drop index '%s': needed in a foreign key constraint
+The syntax '%s' is deprecated and will be removed in
+You can't write-lock a log table. Only read access is possible
+You can't use locks with log tables.
+Upholding foreign key constraints for table '%s', entry '%s', key %d would lead to a duplicate entry
+Column count of mysql.%s is wrong. Expected %d, found %d. Created with
+Cannot switch out of the row-based binary log format when the session has open temporary tables
+Cannot change the binary logging format inside a stored function or trigger
+You should never see it
+Cannot create temporary table with partitions
+Partition constant is out of partition function domain
+This partition function is not allowed
+Error in DDL log
+Not allowed to use NULL value in VALUES LESS THAN
+Incorrect partition name
+Transaction isolation level can't be changed while a transaction is in progress
+ALTER TABLE causes auto_increment resequencing, resulting in duplicate entry '%s' for key '%s'
+Internal scheduler error %d
+Error during starting/stopping of the scheduler. Error code %u
+Engine cannot be used in partitioned tables
+Cannot activate '%s' log
+The server was not built with row-based replication
+Decoding of base64 string failed
+Recursion of EVENT DDL statements is forbidden when body is present
+Cannot proceed because system tables used by Event Scheduler were found damaged at server start
+Only integers allowed as number here
+This storage engine cannot be used for log tables"
+You cannot '%s' a log table if logging is enabled
+Cannot rename '%s'. When logging enabled, rename to/from log table must rename two tables: the log table to an archive table and another table back to '%s'
+Incorrect parameter count in the call to native function '%s'
+Incorrect parameters in the call to native function '%s'
+Incorrect parameters in the call to stored function '%s'
+This function '%s' has the same name as a native function
+Duplicate entry '%s' for key '%s'
+Too many files opened, please execute the command again
+Event execution time is in the past and ON COMPLETION NOT PRESERVE is set. The event was dropped immediately after creation.
+Event execution time is in the past and ON COMPLETION NOT PRESERVE is set. The event was dropped immediately after creation.
+The incident %s occured on the master. Message: %s
+Table has no partition for some existing values
+Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. %s
+Fatal error: %s
+Relay log read failure: %s
+Relay log write failure: %s
+Failed to create %s
+Master command %s failed: %s
+Binary logging not possible. Message: %s
+View `%s`.`%s` has no creation context
+Creation context of view `%s`.`%s' is invalid
+Creation context of stored routine `%s`.`%s` is invalid
+Corrupted TRG file for table `%s`.`%s`
+Triggers for table `%s`.`%s` have no creation context
+Trigger creation context of table `%s`.`%s` is invalid
+Creation context of event `%s`.`%s` is invalid
+Cannot open table for trigger `%s`.`%s`
+Cannot create stored routine `%s`. Check warnings
+You should never see it
+The BINLOG statement of type `%s` was not preceded by a format description BINLOG statement.
+Corrupted replication event was detected
+Invalid column reference (%s) in LOAD DATA
+Being purged log %s was not found
+XA_RBTIMEOUT: Transaction branch was rolled back: took too long
+XA_RBDEADLOCK: Transaction branch was rolled back: deadlock was detected
+Prepared statement needs to be re-prepared
+DELAYED option not supported for table '%s'
+The master info structure does not exist
+<%s> option ignored
+Built-in plugins cannot be deleted
+Plugin is busy and will be uninstalled on shutdown
+%s variable '%s' is read-only. Use SET %s to assign the value
+Storage engine %s does not support rollback for this statement. Transaction rolled back and must be restarted
+Unexpected master's heartbeat data: %s
+The requested value for the heartbeat period is either negative or exceeds the maximum allowed (%s seconds).
+You should never see it
+Error in parsing conflict function. Message: %s
+Write to exceptions table failed. Message: %s"
+Comment for table '%s' is too long (max = %lu)
+Comment for field '%s' is too long (max = %lu)
+FUNCTION %s does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+Database
+Table
+Partition
+Subpartition
+Temporary
+Renamed
+Too many active concurrent transactions
+Non-ASCII separator arguments are not fully supported
+debug sync point wait timed out
+debug sync point hit limit reached
+Duplicate condition information item '%s'
+Unhandled user-defined warning condition
+Unhandled user-defined not found condition
+Unhandled user-defined exception condition
+RESIGNAL when handler not active
+SIGNAL/RESIGNAL can only use a CONDITION defined with SQLSTATE
+Data truncated for condition item '%s'
+Data too long for condition item '%s'
+Unknown locale: '%s'
+The requested server id %d clashes with the slave startup option --replicate-same-server-id
+Query cache is disabled; restart the server with query_cache_type=1 to enable it
+Duplicate partition field name '%s'
+Inconsistency in usage of column lists for partitioning
+Partition column values of incorrect type
+Too many fields in '%s'
+Cannot use MAXVALUE as value in VALUES IN
+Cannot have more than one value for this type of %s partitioning
+Row expressions in VALUES IN only allowed for multi-field column partitioning
+Field '%s' is of a not allowed type for this type of partitioning
+The total length of the partitioning fields is too large
+Cannot execute statement: impossible to write to binary log since both row-incapable engines and statement-incapable engines are involved.
+Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = ROW and at least one table uses a storage engine limited to statement-based logging.
+Cannot execute statement: impossible to write to binary log since statement is unsafe, storage engine is limited to statement-based logging, and BINLOG_FORMAT = MIXED. %s
+Cannot execute statement: impossible to write to binary log since statement is in row format and at least one table uses a storage engine limited to statement-based logging.
+Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging.%s
+Cannot execute statement: impossible to write to binary log since statement is in row format and BINLOG_FORMAT = STATEMENT.
+Cannot execute statement: impossible to write to binary log since more than one engine is involved and at least one engine is self-logging.
+The statement is unsafe because it uses a LIMIT clause. This is unsafe because the set of rows included cannot be predicted.
+The statement is unsafe because it uses INSERT DELAYED. This is unsafe because the times when rows are inserted cannot be predicted.
+The statement is unsafe because it uses the general log, slow query log, or performance_schema table(s). This is unsafe because system tables may differ on slaves.
+Statement is unsafe because it invokes a trigger or a stored function that inserts into an AUTO_INCREMENT column. Inserted values cannot be logged correctly.
+Statement is unsafe because it uses a UDF which may not return the same value on the slave.
+Statement is unsafe because it uses a system variable that may have a different value on the slave.
+Statement is unsafe because it uses a system function that may return a different value on the slave.
+Statement is unsafe because it accesses a non-transactional table after accessing a transactional table within the same transaction.
+%s Statement: %s
+Column %d of table '%s.%s' cannot be converted from type '%s' to type '%s'
+Can't create conversion table for table '%s.%s'
+Cannot modify @@session.binlog_format inside a transaction
+The path specified for %s is too long.
+%s' is deprecated and will be removed in a future release.
+Native table '%s'.'%s' has the wrong structure
+Invalid performance_schema usage.
+Table '%s'.'%s' was skipped since its definition is being modified by concurrent DDL statement
+Cannot modify @@session.binlog_direct_non_transactional_updates inside a transaction
+Cannot change the binlog direct flag inside a stored function or trigger
+A SPATIAL index may only contain a geometrical type column
+Comment for index '%s' is too long (max = %lu)
+Wait on a lock was aborted due to a pending exclusive lock
+%s value is out of range in '%s'
+A variable of a non-integer based type in LIMIT clause
+Mixing self-logging and non-self-logging engines in a statement is unsafe.
+Statement accesses nontransactional table as well as transactional or temporary table, and writes to any of them.
+Cannot modify @@session.sql_log_bin inside a transaction
+Cannot change the sql_log_bin inside a stored function or trigger
+Failed to read from the .par file
+VALUES value for partition '%s' must have type INT
+Access denied for user '%s'@'%s'
+SET PASSWORD has no significance for users authenticating via plugins
+GRANT with IDENTIFIED WITH is illegal because the user %-.*s already exists
+Cannot truncate a table referenced in a foreign key constraint (%s)
+Plugin '%s' is force_plus_permanent and can not be unloaded
+The requested value for the heartbeat period is less than 1 millisecond. The value is reset to 0, meaning that heartbeating will effectively be disabled.
+The requested value for the heartbeat period exceeds the value of slave_net_timeout seconds. A sensible value for the period should be less than the timeout.
+Multi-row statements required more than 'max_binlog_stmt_cache_size' bytes of storage; increase this mysqld variable and try again
+Primary key/partition key update is not allowed since the table is updated both as '%s' and '%s'.
+Table rebuild required. Please do "ALTER TABLE `%s` FORCE" or dump/reload to fix it!
+The value of '%s' should be no less than the value of '%s'
+Index column size too large. The maximum column size is %lu bytes.
+Trigger '%s' has an error in its body: '%s'
+Unknown trigger has an error in its body: '%s'
+Index %s is corrupted
+Undo log record is too big.
+INSERT IGNORE... SELECT is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are ignored. This order cannot be predicted and may differ on master and the slave.
+INSERT... SELECT... ON DUPLICATE KEY UPDATE is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are updated. This order cannot be predicted and may differ on master and the slave.
+REPLACE... SELECT is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are replaced. This order cannot be predicted and may differ on master and the slave.
+CREATE... IGNORE SELECT is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are ignored. This order cannot be predicted and may differ on master and the slave.
+CREATE... REPLACE SELECT is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are replaced. This order cannot be predicted and may differ on master and the slave.
+UPDATE IGNORE is unsafe because the order in which rows are updated determines which (if any) rows are ignored. This order cannot be predicted and may differ on master and the slave.
+You should never see it
+You should never see it
+Statements writing to a table with an auto-increment column after selecting from another table are unsafe because the order in which rows are retrieved determines what (if any) rows will be written. This order cannot be predicted and may differ on master and the slave.
+CREATE TABLE... SELECT... on a table with an auto-increment column is unsafe because the order in which rows are retrieved by the SELECT determines which (if any) rows are inserted. This order cannot be predicted and may differ on master and the slave.
+INSERT... ON DUPLICATE KEY UPDATE on a table with more than one UNIQUE KEY is unsafe
+Table is being used in foreign key check.
+Storage engine '%s' does not support system tables. [%s.%s]
+INSERT into autoincrement field which is not the first part in the composed primary key is unsafe.
+Cannot load from %s.%s. The table is probably corrupted
+The requested value %s for the master delay exceeds the maximum %u
+Only Format_description_log_event and row events are allowed in BINLOG statements (but %s was provided
+Non matching attribute '%s' between partition and table
+Table to exchange with partition is partitioned: '%s'
+Table to exchange with partition is temporary: '%s'
+Subpartitioned table, use subpartition instead of partition
+Unknown partition '%s' in table '%s'
+Tables have different definitions
+Found a row that does not match the partition
+Option binlog_cache_size (%lu) is greater than max_binlog_cache_size (%lu); setting binlog_cache_size equal to max_binlog_cache_size.
+Cannot use %s access on index '%s' due to type or collation conversion on field '%s'
+Table to exchange with partition has foreign key references: '%s'
+Key value '%s' was not found in table '%s.%s'
+Data for column '%s' too long
+Replication event checksum verification failed while reading from network.
+Replication event checksum verification failed while reading from a log file.
+Option binlog_stmt_cache_size (%lu) is greater than max_binlog_stmt_cache_size (%lu); setting binlog_stmt_cache_size equal to max_binlog_stmt_cache_size.
+Can't update table '%s' while '%s' is being created.
+PARTITION () clause on non partitioned table
+Found a row not matching the given partition set
+partition '%s' doesn't exist
+Failure while changing the type of replication repository: %s.
+The creation of some temporary tables could not be rolled back.
+Some temporary tables were dropped, but these operations could not be rolled back.
+%s is not supported in multi-threaded slave mode. %s
+The number of modified databases exceeds the maximum %d; the database names will not be included in the replication event metadata.
+Cannot execute the current event group in the parallel mode. Encountered event %s, relay-log name %s, position %s which prevents execution of this event group in parallel mode. Reason: %s.
+%s
+FULLTEXT index is not supported for partitioned tables.
+Invalid condition number
+Sending passwords in plain text without SSL/TLS is extremely insecure.
+Storing MySQL user name or password information in the master info repository is not secure and is therefore not recommended. Please consider using the USER and PASSWORD connection options for START SLAVE; see the 'START SLAVE Syntax' in the MySQL Manual for more information.
+Foreign key constraint for table '%s', record '%s' would lead to a duplicate entry in table '%s', key '%s'
+Foreign key constraint for table '%s', record '%s' would lead to a duplicate entry in a child table
+Setting authentication options is not possible when only the Slave SQL Thread is being started.
+The table does not have FULLTEXT index to support this query
+The system variable %s cannot be set in stored functions or triggers.
+The system variable %s cannot be set when there is an ongoing transaction.
+The system variable @@SESSION.GTID_NEXT has the value %s, which is not listed in @@SESSION.GTID_NEXT_LIST.
+The system variable @@SESSION.GTID_NEXT cannot change inside a transaction.
+The statement 'SET %s' cannot invoke a stored function.
+The system variable @@SESSION.GTID_NEXT cannot be 'AUTOMATIC' when @@SESSION.GTID_NEXT_LIST is non-NULL.
+Skipping transaction %s because it has already been executed and logged.
+Malformed GTID set specification '%s'.
+Malformed GTID set encoding.
+Malformed GTID specification '%s'.
+Impossible to generate Global Transaction Identifier: the integer component reached the maximal value. Restart the server with a new server_uuid.
+Parameters MASTER_LOG_FILE, MASTER_LOG_POS, RELAY_LOG_FILE and RELAY_LOG_POS cannot be set when MASTER_AUTO_POSITION is active.
+CHANGE MASTER TO MASTER_AUTO_POSITION = 1 can only be executed when @@GLOBAL.GTID_MODE = ON.
+Cannot execute statements with implicit commit inside a transaction when @@SESSION.GTID_NEXT != AUTOMATIC.
+GTID_MODE = ON or GTID_MODE = UPGRADE_STEP_2 requires DISABLE_GTID_UNSAFE_STATEMENTS = 1.
+@@GLOBAL.GTID_MODE = ON or UPGRADE_STEP_2 requires @@GLOBAL.ENFORCE_GTID_CONSISTENCY = 1.
+@@GLOBAL.GTID_MODE = ON or UPGRADE_STEP_1 or UPGRADE_STEP_2 requires --log-bin and --log-slave-updates.
+@@SESSION.GTID_NEXT cannot be set to UUID:NUMBER when @@GLOBAL.GTID_MODE = OFF.
+@@SESSION.GTID_NEXT cannot be set to ANONYMOUS when @@GLOBAL.GTID_MODE = ON.
+@@SESSION.GTID_NEXT_LIST cannot be set to a non-NULL value when @@GLOBAL.GTID_MODE = OFF.
+Found a Gtid_log_event or Previous_gtids_log_event when @@GLOBAL.GTID_MODE = OFF.
+When @@GLOBAL.ENFORCE_GTID_CONSISTENCY = 1, updates to non-transactional tables can only be done in either autocommitted statements or single-statement transactions, and never in the same statement as updates to transactional tables.
+CREATE TABLE ... SELECT is forbidden when @@GLOBAL.ENFORCE_GTID_CONSISTENCY = 1.
+When @@GLOBAL.ENFORCE_GTID_CONSISTENCY = 1, the statements CREATE TEMPORARY TABLE and DROP TEMPORARY TABLE can be executed in a non-transactional context only, and require that AUTOCOMMIT = 1.
+The value of @@GLOBAL.GTID_MODE can only change one step at a time: OFF <-> UPGRADE_STEP_1 <-> UPGRADE_STEP_2 <-> ON. Also note that this value must be stepped up or down simultaneously on all servers; see the Manual for instructions.
+The slave is connecting using CHANGE MASTER TO MASTER_AUTO_POSITION = 1, but the master has purged binary logs containing GTIDs that the slave requires.
+@@SESSION.GTID_NEXT cannot be changed by a client that owns a GTID. The client owns %s. Ownership is released on COMMIT or ROLLBACK.
+Unknown EXPLAIN format name: '%s'
+Cannot execute statement in a READ ONLY transaction.
+Comment for table partition '%s' is too long (max = %lu
+Slave is not configured or failed to initialize properly. You must at least set --server-id to enable either a master or a slave. Additional error messages can be found in the MySQL error log.
+InnoDB presently supports one FULLTEXT index creation at a time
+Cannot create FULLTEXT index on temporary InnoDB table
+Column '%s' is of wrong type for an InnoDB FULLTEXT index
+Index '%s' is of wrong type for an InnoDB FULLTEXT index
+Creating index '%s' required more than 'innodb_online_alter_log_max_size' bytes of modification log. Please try again.
+Unknown ALGORITHM '%s'
+Unknown LOCK type '%s'
+CHANGE MASTER cannot be executed when the slave was stopped with an error or killed in MTS mode. Consider using RESET SLAVE or START SLAVE UNTIL.
+Cannot recover after SLAVE errored out in parallel execution mode. Additional error messages can be found in the MySQL error log.
+Cannot clean up worker info tables. Additional error messages can be found in the MySQL error log.
+Column count of %s.%s is wrong. Expected %d, found %d. The table is probably corrupted
+Slave must silently retry current transaction
+There is a foreign key check running on table '%s'. Cannot discard the table.
+Schema mismatch (%s
+Table '%s' in system tablespace
+IO Read error: (%lu, %s) %s
+IO Write error: (%lu, %s) %s
+Tablespace is missing for table '%s'
+Tablespace for table '%s' exists. Please DISCARD the tablespace before IMPORT.
+Tablespace has been discarded for table '%s'
+Internal error: %s
+ALTER TABLE '%s' IMPORT TABLESPACE failed with error %lu : '%s'
+Index corrupt: %s
+YEAR(%lu) column type is deprecated. Creating YEAR(4) column instead.
+Your password does not satisfy the current policy requirements
+You must SET PASSWORD before executing this statement
+Failed to add the foreign key constaint. Missing index for constraint '%s' in the foreign table '%s'
+Failed to add the foreign key constaint. Missing index for constraint '%s' in the referenced table '%s'
+Failed to add the foreign key constraint '%s' to system tables
+Failed to open the referenced table '%s'
+Failed to add the foreign key constraint on table '%s'. Incorrect options in FOREIGN KEY constraint '%s'
+Duplicate foreign key constraint name '%s'
+The password hash doesn't have the expected format. Check if the correct password algorithm is being used with the PASSWORD() function.
+Cannot drop column '%s': needed in a foreign key constraint '%s'
+Cannot drop column '%s': needed in a foreign key constraint '%s' of table '%s'
+Column '%s' cannot be NOT NULL: needed in a foreign key constraint '%s' SET NULL
+Duplicate index '%s' defined on the table '%s.%s'. This is deprecated and will be disallowed in a future release.
+Cannot change column '%s': used in a foreign key constraint '%s'
+Cannot change column '%s': used in a foreign key constraint '%s' of table '%s'
+Cannot delete rows from table which is parent in a foreign key constraint '%s' of table '%s'
+Malformed communication packet.
+Running in read-only mode
+When @@SESSION.GTID_NEXT is set to a GTID, you must explicitly set it to a different value after a COMMIT or ROLLBACK. Please check GTID_NEXT variable manual page for detailed explanation. Current @@SESSION.GTID_NEXT is '%s'.
+The system variable %s cannot be set in stored procedures.
+@@GLOBAL.GTID_PURGED can only be set when @@GLOBAL.GTID_MODE = ON.
+@@GLOBAL.GTID_PURGED can only be set when @@GLOBAL.GTID_EXECUTED is empty.
+@@GLOBAL.GTID_PURGED can only be set when there are no ongoing transactions (not even in other clients).
+@@GLOBAL.GTID_PURGED was changed from '%s' to '%s'.
+@@GLOBAL.GTID_EXECUTED was changed from '%s' to '%s'.
+Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT, and both replicated and non replicated tables are written to.
+%s is not supported for this operation. Try %s.
+%s is not supported. Reason: %s. Try %s.
+COPY algorithm requires a lock
+Partition specific operations do not yet support LOCK/ALGORITHM
+Columns participating in a foreign key are renamed
+Cannot change column type INPLACE
+Adding foreign keys needs foreign_key_checks=OFF
+Creating unique indexes with IGNORE requires COPY algorithm to remove duplicate rows
+Dropping a primary key is not allowed without also adding a new primary key
+Adding an auto-increment column requires a lock
+Cannot replace hidden FTS_DOC_ID with a user-visible one
+Cannot drop or rename FTS_DOC_ID
+Fulltext index creation requires a lock
+sql_slave_skip_counter can not be set when the server is running with @@GLOBAL.GTID_MODE = ON. Instead, for each transaction that you want to skip, generate an empty transaction with the same GTID as the transaction
+Duplicate entry for key '%s'
+Long database name and identifier for object resulted in path length exceeding %d characters. Path: '%s'.
+cannot silently convert NULL values, as required in this SQL_MODE
+Your password has expired. To log in you must change it using a client that supports expired passwords.
+Found a row in wrong partition %s
+Cannot schedule event %s, relay-log name %s, position %s to Worker thread because its size %lu exceeds %lu of slave_pending_jobs_size_max.
+Cannot CREATE FULLTEXT INDEX WITH PARSER on InnoDB table
+The binary log file '%s' is logically corrupted: %s
+file %s was not purged because it was being read by %d thread(s), purged only %d out of %d files.
+file %s was not purged because it is the active log file.
+Auto-increment value in UPDATE conflicts with internally generated values
+Row events are not logged for %s statements that modify BLACKHOLE tables in row format. Table(s): '%s'
+Slave failed to initialize master info structure from the repository
+Slave failed to initialize relay log info structure from the repository
+Access denied trying to change to user '%s'@'%s' (using password: %s). Disconnecting.
+InnoDB is in read only mode.
+STOP SLAVE command execution is incomplete: Slave SQL thread got the stop signal, thread is busy, SQL thread will stop once the current task is complete.
+STOP SLAVE command execution is incomplete: Slave IO thread got the stop signal, thread is busy, IO thread will stop once the current task is complete.
+Operation cannot be performed. The table '%s.%s' is missing, corrupt or contains bad data.
+Temporary file write failure.
+Upgrade index name failed, please use create index(alter table) algorithm copy to rebuild index.

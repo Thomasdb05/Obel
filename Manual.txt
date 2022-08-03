@@ -1,7 +1,12 @@
-                               Obel:
-                        By Thomas de Bock. 
-         Obel can currently only be used to (SQL) inject parameters contained in the site url")
-                        tags:")
-                        --help
-                        -u (url)")
-                        -p (parametername)")
+
+
+Options:
+       --help                      Show manual
+       --version                   Show Obel version number
+       --quit                      Exit Obel
+       --new                       Opens additional Obel window
+
+Modes:
+       SQL                         accesses Obel's SQL scanning and cracking capabilities
+       XSS                         accesses Obel's SQL scanning capabilities
+       NET                         accesses Obel's general network scanning capabilities
