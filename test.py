@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from requests_html import HTMLSession
 from tools.HTMLtools.HTMLanalyzer import *
 from pprint import pprint
-from tools.HTTPtools.HTTPconstructor import *
+from tools.HTTPtools.HTTPtools import *
 from tools.SQLtools.SQLscanner import *
 
 session = HTMLSession()

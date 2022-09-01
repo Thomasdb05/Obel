@@ -1,4 +1,3 @@
- @COMMENT_TAG@ every uneven numer results in TRUE while every even number results in FALSE
  OR 1=1
  OR 1=0
  OR x=x

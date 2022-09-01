@@ -1,3 +1,4 @@
+from typing import final
 from colorama import Fore, Back, Style
 from enum import Enum
 
@@ -29,3 +30,33 @@ def log(type, str):
                 print(Fore.RED + "[ERROR] " + Style.RESET_ALL + str)
         elif type == MSG.USER:
                 print(Fore.CYAN + str + Style.RESET_ALL, end = "")
+
+#options is array, optionchars is array of corresponding answer chars
+#returns index of Chose option
+def ask(question, optionlist, optionchars, defaultoption):
+        #global questions_enabled
+        #if questions_enabled:
+        #        return defaultoption
+        options = optionlist.copy()
+        final = question + ' ('
+        for i in range(0, len(options)):
+                #highlight answer char in options
+                charindex = options[i].find(optionchars[i])
+                options[i] = options[i][:charindex] + '[' + optionchars[i] + ']' + options[i][charindex+1:]
+
+                final += options[i] 
+                if i < len(options)-1:
+                        final += '/'
+
+        final = final + '):       '
+        while True:
+                log(MSG.USER, final)
+                inp = input().lower()
+                if inp == 'default' or inp == 'def':
+                        return defaultoption
+                index = "".join(optionchars).lower().find(inp)
+                if index >= 0:
+                        return optionchars[index]
+                print('answer does not correspond to any option, please try again')
+
+#ask("how many bitches do you currently own?", ["I dont own any", "I own many", "a few"], ['d', 'm', 'f'], 'd')

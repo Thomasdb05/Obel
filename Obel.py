@@ -2,11 +2,10 @@
 
 from enum import Enum
 import sys
-from Logger import *
-from ReqManager import *
+from logger import *
+from initializer import *
  
-def doSQL(flags):
-        getHTTP(flags[1])
+#def doSQL(flags):
 
 #def doXSS(flags):
 
@@ -19,8 +18,8 @@ def doSQL(flags):
 
 
 
-
-print(open("Startup.txt", "r").read())
+print(open("DATA/logging/Startup.txt", "r").read())
+initiliaze()
 while True:
         log(MSG.USER, "Obel: ")
         flags = input().split()
@@ -29,8 +28,8 @@ while True:
         for i in range(0, len(flags)):
                 flag = flags[i]
 
-                if flag == "sql":
-                        doSQL(flags)
+                #if flag == "sql":
+                        #doSQL(flags)
                 #elif flag == "xss":
                         #doXSS(flags)
                 #elif flag == "versions":
